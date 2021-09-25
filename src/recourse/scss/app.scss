@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+$primary-color: #64fcd9;
+$secondary-color: #00160a;
+
+html {
+    font-family: Poppins, sans-serif;
+    font-size: 62.5%;
+    color: $secondary-color;
+}
+
+.header{
+    position: relative;
+}
+.body {
+    margin: 0 5rem;
+}
+
+.mt-50 {
+    margin-top:5rem;
+}
+
+.navbar {
+    position: fixed;
+    top: 0;
+    padding: 0 5rem;
+    z-index: 1;
+    width: 100%;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    user-select: none; /* supported by Chrome and Opera */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    &-icon {
+        font-size: 6rem;
+        font-weight: 600;
+    }
+    &-items {
+        font-size: 3rem;
+        display: flex;
+        align-items: center;
+        position: relative;
+
+        .navbar-item {
+            height: 5.2rem;
+            line-height: 5.2rem;
+            position: relative;
+
+            &:not(:first-child) {
+                margin-left: 40px;
+            }
+        }
+        .tab-indicator {
+            border: solid 4px $primary-color;
+            position: absolute;
+            bottom: 26%;
+            border-radius: 4px;
+            width: 100%;
+            left: 0;
+            transition: all 0.2s ease-in-out;
+        }
+    }
+}
+.section {
+    position: relative;
+    display: flex;
+    .quote {
+        
+       
+        &-title {
+            font-size: 5rem;
+            line-height: 6.5rem;
+            font-weight: 400;
+            margin: 43px 0;
+        }
+        &-content {
+            font-size: 2.5rem;
+            line-height: 3.5rem;
+        }
+    }
+    &-img {
+        padding-top:50%;
+        background-image: url(../img/background.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        &-1 {
+            background-image: url(../img/Artist.png);
+            background-position: left;
+        }
+        &-2 {
+            background-image: url(../img/section-end.png);
+        }
+
+    }
+   
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 4rem;
+    }
+    &:first-child {
+        margin-top: 100px;
+    }
+    &-title {
+        font-size: 5rem;
+        line-height: 6.2rem;
+        position: relative;
+        text-align: center;
+        margin: 40px 0;
+        position: relative;
+        
+    }
+}
+
+.title-underline {
+    position: relative;
+    display: inline-block;
+    &::before {
+        content: "";
+        border: solid 4px $primary-color;
+        border-radius: 7px ;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+    }
+}
+
+
+.section-card {
+    border: solid 4px $secondary-color;
+    border-radius:20px;
+    box-shadow: 8px 8px 4px rgba(0, 0, 0, 0.25);
+    background-color:#fff;
+    padding: 10px 10px 0;
+    
+    &-title {
+        font-size: 4rem;
+        line-height: 6rem;
+        display:block;
+        text-align: center;
+    }
+    &-img {
+        
+        min-height: 400px;
+
+    }
+    &-footer {
+        display: flex;
+        justify-content:center;
+        margin: 20px 0;
+    }
+}
+
+.content-btn {
+    min-width: 220px;
+    padding: 26px 52px;
+    background-color: $secondary-color;
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    font-size: 3rem;
+    line-height: 3.5rem;
+    font-weight: 600;
+    box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.25);
+    margin: 20px 0;
+}
+
+.mx-36 {
+    margin: 36px 0;
+}
+
+.footer {
+    background-color: $secondary-color;
+    margin-top: 50px;
+    color: #fff;
+    &-header {
+        font-size: 5rem;
+        line-height: 6.5rem;
+        padding: 16px 0;
+    }
+    &-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    &-list-link {
+        margin: 20px 0;
+    }
+    &-link {
+        font-size: 2.5rem;
+        line-height: 3.6rem;
+    }
+    &-socials {
+        margin: 10px 0;
+    }
+    &-social:not(:first-child) {
+        margin-left: 10px;
+    }
+    &-copyright {
+        font-size: 2.5rem;
+        line-height: 3rem;
+    }
+}
